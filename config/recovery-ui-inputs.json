@@ -1,0 +1,18 @@
+{
+  "native_width": 1264,
+  "native_height": 2780,
+  "hole_bounds": [596, 40, 668, 112],
+  "hole_source": "Approved actual-Android ro.oplus.display.screenhole.positon capture, 20261002T070421Z",
+  "scale_source": "Build-10 recovery.log and approved private 1264x2780 home screenshot: x=1.170370, y=1.000000",
+  "stock_framework_apk_sha256": "ca97e5838d175afaedcbf67059d9f2e2564212275d85a67f9df7e6e436eae4b2",
+  "stock_status_bar_height_portrait_dp": 32,
+  "stock_vendor_rounded_corner_radius_dp": 20,
+  "compiled_flags": {
+    "OF_SCREEN_H": "2780",
+    "OF_STATUS_H": "152",
+    "OF_STATUS_INDENT_LEFT": "60",
+    "OF_STATUS_INDENT_RIGHT": "40",
+    "OF_DEFAULT_TIMEZONE": "CST-8"
+  },
+  "status": "Measured geometry with chosen padding; visual acceptance of the new image is pending"
+}

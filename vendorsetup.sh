@@ -15,6 +15,13 @@ export FOX_DELETE_MAGISK_ADDON=1
 export FOX_DELETE_AROMAFM=1
 export OF_ADVANCED_SECURITY=1
 export OF_SCREEN_H=2780
+# Actual hole y=40..112, center=76. Runtime scale is x=1264/1080, y=1.
+# Center the 56px status line at y=76; leave 40px below the hole for chrome.
+export OF_STATUS_H=152
+# Fox's right anchor is 1060, already 20 logical px inside a 1080px theme.
+# 60 on the left and 20+40 on the right give equal ~70px native margins.
+export OF_STATUS_INDENT_LEFT=60
+export OF_STATUS_INDENT_RIGHT=40
 # Beijing, UTC+8. POSIX TZ uses the opposite sign; saved user settings win.
 export OF_DEFAULT_TIMEZONE="CST-8"
 export FOX_USE_MISANS_FONTS=1
