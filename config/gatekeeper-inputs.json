@@ -1,0 +1,55 @@
+{
+  "source": "Approved current Android 17 ColorOS port active A vendor export and normal Android properties",
+  "collection_manifest_sha256": "10ebdfe1753e8b4b5ffd5a782fb0262d88e6a5118cec8d71808562a589b91a62",
+  "properties": {
+    "vendor.gatekeeper.disable_spu": "true",
+    "vendor.gatekeeper.is_security_level_spu": "0"
+  },
+  "service": {
+    "name": "gatekeeper-1-0",
+    "binary": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+    "class": "early_hal",
+    "user": "system",
+    "group": [
+      "system"
+    ],
+    "disabled": true
+  },
+  "hal": {
+    "format": "hidl",
+    "name": "android.hardware.gatekeeper",
+    "version": "1.0",
+    "transport": "hwbinder",
+    "interface": "IGatekeeper",
+    "instance": "default"
+  },
+  "sources": [
+    {
+      "path": "reference/current/crypto-inputs-20261002T113822Z/files/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc",
+      "sha256": "2ce830b82b27187b4c10e1e08628ff98bdf87785a7943ba34b2314b845a3fa06"
+    },
+    {
+      "path": "reference/current/crypto-inputs-20261002T113822Z/files/vendor/etc/vintf/manifest_kalama.xml",
+      "sha256": "1dd76d79f7feb699db6c0a5b3c33d40fec79a702ae81a2feea3ed59e26482c82"
+    },
+    {
+      "path": "reference/current/crypto-inputs-20261002T113822Z/files/vendor/build.prop",
+      "sha256": "afb63d3b01b8da4a2b85ca2816e016b2ee7ddeb20e5a592b9e0d608607f733f8"
+    },
+    {
+      "path": "reference/current/android-20261002T070421Z/getprop.txt",
+      "sha256": "d252932f7db23295a34396009deecd9d95a4015a36b296ee824f56c8185efb19"
+    }
+  ],
+  "elf_paths": [
+    "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+    "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+    "/vendor/lib64/android.hardware.gatekeeper@1.0.so"
+  ],
+  "recovery_adaptations": [
+    "Existing diagnostic recovery domain; not final strict SELinux",
+    "Explicit start after target property trigger because TWRP does not start class early_hal"
+  ],
+  "failure_evidence": "build-20 user PIN attempts read DE SP metadata then fail to get Gatekeeper service; verify not reached",
+  "scope": "Three target ELF files, original service identities/trigger, two measured vendor properties, HIDL 1.0 declaration; no fstab/kernel/SP implementation/version change"
+}

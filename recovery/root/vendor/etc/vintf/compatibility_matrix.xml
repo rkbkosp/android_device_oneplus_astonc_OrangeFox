@@ -1,0 +1,4 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Recovery service subset; no additional framework HAL requirements.
+     This is not the installed ROM's compatibility assessment. -->
+<compatibility-matrix version="1.0" type="device" />

@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+$(call inherit-product, device/oneplus/astonc/device.mk)
+PRODUCT_DEVICE := astonc
+PRODUCT_NAME := twrp_astonc
+PRODUCT_BRAND := OnePlus
+PRODUCT_MODEL := PJE110
+PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_RELEASE_NAME := astonc
+TARGET_OTA_ASSERT_DEVICE := astonc,aston,OP5CF9L1

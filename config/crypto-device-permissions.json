@@ -1,0 +1,23 @@
+{
+  "source": "current Android 17 /vendor/etc/ueventd.rc; approved normal-Android read-only collection 2026-10-02",
+  "source_sha256": "fe0d7950888846dc908c31b0b80ac0486128c2b42e70e65380adce1a80444c53",
+  "rules": [
+    "/dev/ion                  0664   system     system",
+    "/dev/membuf               0664   system     system",
+    "/dev/mem_buf_vm/*         0444   system     system",
+    "/dev/dma_heap/qcom,*      0444   system     system",
+    "/dev/0:0:0:49476          0600   system     system",
+    "/dev/0:0:0:4              0600   system     root",
+    "/dev/qseecom              0660   system     drmrpc",
+    "/dev/qce                  0660   system     drmrpc",
+    "/dev/smcinvoke            0660   system     drmrpc",
+    "/dev/qsee_ipc_irq_spss    0660   system     drmrpc",
+    "/dev/spcom                0660   system     system",
+    "/dev/spss_utils           0660   system     system",
+    "/dev/sp_kernel            0660   system     system",
+    "/dev/sp_nvm               0660   system     system",
+    "/dev/sp_ssr               0660   system     system"
+  ],
+  "reason": "build-11 smcinvoke/spcom/spss and Qualcomm DMA heaps were root:root 0600; target system/drmrpc HAL identities need the target DAC rules",
+  "scope": "security device nodes only; no persist mount, no world-write workaround"
+}

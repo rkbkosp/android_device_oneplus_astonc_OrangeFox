@@ -1,0 +1,28 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!--
+    AOSP system/hwservicemanager/hwservicemanager_no_max.xml.
+    TWRP copies the normal hwservicemanager binary, whose VINTF reader uses
+    framework/device schemas. Its framework fallback is /system/manifest.xml.
+    Keep /system/etc/vintf/manifest for recovery's device-schema AIDL fragments;
+    putting a framework main there would mix schemas in the normal reader.
+-->
+<manifest version="1.0" type="framework">
+    <hal>
+        <name>android.hidl.manager</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IServiceManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal>
+        <name>android.hidl.token</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITokenManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

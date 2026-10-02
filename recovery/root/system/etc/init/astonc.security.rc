@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: Apache-2.0
+# Target rc service identities/order; recovery diagnostic domains only.
+# Gatekeeper has its own rc; no Weaver/OMAPI service in this candidate.
+on init
+    # Target librpmb selects UFS via stat/readlink of bootdevice during its
+    # initial privileged setup. qseecomd then drops to system; prepare paths
+    # before starting it rather than allowing a cached default RPMB device.
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    wait /dev/ufs-bsg0
+    wait /dev/0:0:0:49476
+    start vendor.qseecomd
+    start qseecom-service
+    start vendor.keymint-qti
+
+service vendor.qseecomd /vendor/bin/qseecomd
+    socket notify-topology stream 660 system drmrpc
+    class core
+    user root
+    group root drmrpc
+    seclabel u:r:recovery:s0
+
+service qseecom-service /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+    class hal
+    user system
+    group system drmrpc
+    seclabel u:r:recovery:s0
+
+service vendor.keymint-qti /vendor/bin/hw/android.hardware.security.keymint-service-qti
+    class early_hal
+    user system
+    group system drmrpc
+    seclabel u:r:recovery:s0

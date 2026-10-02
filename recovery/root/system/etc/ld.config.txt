@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+# Isolate dependency priority per executable. Recovery uses AOSP providers;
+# target vendor services use their exact vendor closure before AOSP fallbacks.
+dir.vendor = /vendor/bin
+dir.recovery = /system/bin
+[recovery]
+namespace.default.isolated = false
+namespace.default.search.paths = /system/${LIB}
+[vendor]
+namespace.default.isolated = false
+namespace.default.search.paths = /vendor/${LIB}:/system/${LIB}

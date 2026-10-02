@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: Apache-2.0
+firmware_directories /etc/firmware/ /odm/firmware/ /vendor/firmware/ /vendor/firmware_mnt/image/ /firmware/image/
+/dev/dri/* 0660 root graphics
+/dev/graphics/* 0660 root graphics
+/dev/input/* 0660 root input
+/sys/class/backlight/panel0-backlight brightness 0660 root system
+
+# Security-device permissions from the current Android 17 vendor ueventd.rc.
+# Exact target modes/owners; see config/crypto-device-permissions.json.
+/dev/ion                  0664   system     system
+/dev/membuf               0664   system     system
+/dev/mem_buf_vm/*         0444   system     system
+/dev/dma_heap/qcom,*      0444   system     system
+/dev/0:0:0:49476          0600   system     system
+/dev/0:0:0:4              0600   system     root
+/dev/qseecom              0660   system     drmrpc
+/dev/qce                  0660   system     drmrpc
+/dev/smcinvoke            0660   system     drmrpc
+/dev/qsee_ipc_irq_spss    0660   system     drmrpc
+/dev/spcom                0660   system     system
+/dev/spss_utils           0660   system     system
+/dev/sp_kernel            0660   system     system
+/dev/sp_nvm               0660   system     system
+/dev/sp_ssr               0660   system     system

@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: Apache-2.0
+# AOSP system/extras/partition_tools/lpdumpd.rc, adapted for recovery rootfs.
+# TWRP's lpdumpd.recovery prebuilt does not install the upstream init_rc.
+# Existing ramdisk inodes stayed rootfs on the target kernel despite genfs
+# rules. Restore actual inode labels before enforcing services use them.
+on early-init
+    restorecon /system/bin/linker64 /system/bin/lpdumpd
+    restorecon_recursive /system/lib64
+
+service lpdumpd /system/bin/lpdumpd
+    oneshot
+    disabled
+    user system
+    group system
+    seclabel u:r:lpdumpd:s0
+    file /dev/block/by-name/super r
+
+on property:sys.lpdumpd=start
+    start lpdumpd
+
+on property:sys.lpdumpd=stop
+    stop lpdumpd

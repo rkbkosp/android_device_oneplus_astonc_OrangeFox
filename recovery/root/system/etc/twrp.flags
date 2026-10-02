@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Recovery operations only. Encryption/FS settings still come from the actual
+# target vendor fstab; the source patch reapplies these flags in its second pass.
+/metadata f2fs /dev/block/by-name/metadata flags=backup=0;wipeduringfactoryreset=0;wipeingui=0;canbewiped=0
+/data f2fs /dev/block/by-name/userdata flags=backup=0;wipeduringfactoryreset=0;wipeingui=0;canbewiped=0

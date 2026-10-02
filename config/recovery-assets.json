@@ -1,0 +1,119 @@
+{
+  "stock_recovery_sha256": "ba20b994f9d6ec06b719556f978a7dec5fb55684470343e4ceeeaaacecd359aa",
+  "assets": [
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_BOE.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_BOE.img",
+      "sha256": "924edbffabfc506d15ac1aab4f6197dbfeff95405b354c31cfa7ab8164d45ce2",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_BOE_FAE.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_BOE_FAE.img",
+      "sha256": "f23050465bfc4e7d771e84be38c549a1efb7430f874fd28851700fbf8994690e",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_BOE_HBP.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_BOE_HBP.img",
+      "sha256": "69fbbdf96adbad9e1a0b2031629031cf9feb9619300b24a951868b0d7e13d078",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_BOE_HBP_FAE.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_BOE_HBP_FAE.img",
+      "sha256": "12807ec4b1662a132b75e3e5c5b59f8c1ef5fef9d7dc5280b06bb99c7710cb20",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_TIANMA.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_TIANMA.img",
+      "sha256": "924edbffabfc506d15ac1aab4f6197dbfeff95405b354c31cfa7ab8164d45ce2",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_TIANMA_FAE.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_TIANMA_FAE.img",
+      "sha256": "f23050465bfc4e7d771e84be38c549a1efb7430f874fd28851700fbf8994690e",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_TIANMA_HBP.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_TIANMA_HBP.img",
+      "sha256": "47e3fca4e640fe78c2b064601aa59dd7690029ab22b0a5915cf7feb8b27cfcbf",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/FW_S3910_TIANMA_HBP_FAE.img",
+      "destination": "vendor/firmware/tp/23801/FW_S3910_TIANMA_HBP_FAE.img",
+      "sha256": "185ef2046ae416207a140a0b83e9597d0dd6bac976dbebdd17f9cad873dd3de5",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/LIMIT_S3910_BOE.img",
+      "destination": "vendor/firmware/tp/23801/LIMIT_S3910_BOE.img",
+      "sha256": "6d9d1ff6cfd747f4a18dad4f835720a6a0335eb4642fdd579a61cbf4fcd1c6ee",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/LIMIT_S3910_BOE_HBP.img",
+      "destination": "vendor/firmware/tp/23801/LIMIT_S3910_BOE_HBP.img",
+      "sha256": "903f01fd40ce8188f4557009894ab55664323cdff6e83da17568b1eda8ca1975",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/LIMIT_S3910_BOE_HBP_AGING.img",
+      "destination": "vendor/firmware/tp/23801/LIMIT_S3910_BOE_HBP_AGING.img",
+      "sha256": "77e1a6e1e800acffeea5e113d8fd780522fe02b38f8814ac6d842eb48617c2d8",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/LIMIT_S3910_TIANMA.img",
+      "destination": "vendor/firmware/tp/23801/LIMIT_S3910_TIANMA.img",
+      "sha256": "1917e280d2b57a6b8f76644e53f15e9ba196a0b9538b3f645f84b46c1d4f6b29",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/firmware/tp/23801/LIMIT_S3910_TIANMA_HBP.img",
+      "destination": "vendor/firmware/tp/23801/LIMIT_S3910_TIANMA_HBP.img",
+      "sha256": "1917e280d2b57a6b8f76644e53f15e9ba196a0b9538b3f645f84b46c1d4f6b29",
+      "type": "touch firmware/limit data, non-ELF"
+    },
+    {
+      "source": "vendor/lib/modules/adsp_loader_dlkm.ko",
+      "destination": "vendor/lib/modules/adsp_loader_dlkm.ko",
+      "sha256": "766ff1eed617bff5d7697a3549d304a68c8da2aea0dc3d46f329694864e52722",
+      "type": "ADSP kernel module, ELF relocatable; no DT_NEEDED"
+    },
+    {
+      "source": "vendor/lib/modules/gpr_dlkm.ko",
+      "destination": "vendor/lib/modules/gpr_dlkm.ko",
+      "sha256": "73b3de8ab9a2b5eae91703860520c19d43369ba96582886efa9f19fd246b49a2",
+      "type": "ADSP kernel module, ELF relocatable; no DT_NEEDED"
+    },
+    {
+      "source": "vendor/lib/modules/q6_notifier_dlkm.ko",
+      "destination": "vendor/lib/modules/q6_notifier_dlkm.ko",
+      "sha256": "583b66ea7a1d4b6734d34d8bceffa5204d6cc3fee4234c4f179f478f6a874938",
+      "type": "ADSP kernel module, ELF relocatable; no DT_NEEDED"
+    },
+    {
+      "source": "vendor/lib/modules/q6_pdr_dlkm.ko",
+      "destination": "vendor/lib/modules/q6_pdr_dlkm.ko",
+      "sha256": "ebecceb335432bf0f0c873ea91ea3f0b2bf255619657a643b991693853a99c4b",
+      "type": "ADSP kernel module, ELF relocatable; no DT_NEEDED"
+    },
+    {
+      "source": "vendor/lib/modules/snd_event_dlkm.ko",
+      "destination": "vendor/lib/modules/snd_event_dlkm.ko",
+      "sha256": "80663e2eb6497b53428ae1672710011d9101b7c92086baba07e9f761e8347ef2",
+      "type": "ADSP kernel module, ELF relocatable; no DT_NEEDED"
+    },
+    {
+      "source": "vendor/lib/modules/spf_core_dlkm.ko",
+      "destination": "vendor/lib/modules/spf_core_dlkm.ko",
+      "sha256": "feebb5740f8a505342b781d3fb5dd2348e48799c0985bb5dca9459b8d3a3fb58",
+      "type": "ADSP kernel module, ELF relocatable; no DT_NEEDED"
+    }
+  ]
+}

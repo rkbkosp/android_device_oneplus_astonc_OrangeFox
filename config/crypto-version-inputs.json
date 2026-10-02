@@ -1,0 +1,37 @@
+{
+  "source": "Current Android 17 ColorOS port; approved normal Android getprop and active A vendor RO export",
+  "vendor_security_patch": "2026-09-01",
+  "sources": [
+    {
+      "path": "reference/current/crypto-inputs-20261002T113822Z/files/vendor/build.prop",
+      "field": "ro.vendor.build.security_patch",
+      "sha256": "afb63d3b01b8da4a2b85ca2816e016b2ee7ddeb20e5a592b9e0d608607f733f8"
+    },
+    {
+      "path": "reference/current/android-20261002T070421Z/getprop.txt",
+      "field": "ro.vendor.build.security_patch",
+      "sha256": "d252932f7db23295a34396009deecd9d95a4015a36b296ee824f56c8185efb19"
+    },
+    {
+      "path": "reference/current/android-20261002T070421Z/getprop.txt",
+      "fields": [
+        "ro.build.version.release",
+        "ro.build.version.security_patch"
+      ],
+      "sha256": "d252932f7db23295a34396009deecd9d95a4015a36b296ee824f56c8185efb19"
+    }
+  ],
+  "build_input": "VENDOR_SECURITY_PATCH",
+  "consumed_by": "build/make/core/sysprop_config.mk: ADDITIONAL_VENDOR_PROPERTIES",
+  "rationale": "build-19 metadata begin KEY_REQUIRES_UPGRADE then upgrade INVALID_ARGUMENT; KeyMint interface rejects downgrade of OS/patch binding; target system values from normal Android are newer than recovery defaults. Configure INVALID_TAG remains a separate observed error, not a proven sole cause.",
+  "scope": "Vendor patch and two measured system identity properties only; no future values, OS_VERSION=0, platform SDK or AVB rollback modification",
+  "system_release": "17",
+  "system_security_patch": "2026-09-01",
+  "recovery_userspace": {
+    "source_branch": "twrp-16.0",
+    "sdk": "36",
+    "release": "16",
+    "system_security_patch": "2025-06-05"
+  },
+  "system_property_scope": "Rewrite only recovery prop.default before packaging and before QTI HAL constructor; do not change build SDK/API/release flags or boot image/AVB version metadata"
+}

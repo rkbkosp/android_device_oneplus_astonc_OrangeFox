@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+# AOSP default HAL's recovery executable is under /system, not /vendor.
+/system/bin/hw/android\.hardware\.boot-service\.default_recovery u:object_r:hal_bootctl_default_exec:s0
+# ueventd matches partition aliases when labeling the real block node.
+# BootControl needs the existing misc-specific policy, not generic block access.
+/dev/block/by-name/misc u:object_r:misc_block_device:s0
+# lpdumpd uses the existing AOSP super read policy via an init-opened RO fd.
+/dev/block/by-name/super u:object_r:super_block_device:s0

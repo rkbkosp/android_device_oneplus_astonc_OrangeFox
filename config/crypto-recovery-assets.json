@@ -1,0 +1,672 @@
+{
+  "phase": "Target Gatekeeper service bring-up after build-20 metadata/data/DE PASS; CE not accepted",
+  "source": "Current A-slot ColorOS Android 17 vendor/odm export (build-17 recovery); all selected ELF hashes also match stock A16",
+  "collection_manifest_sha256": "10ebdfe1753e8b4b5ffd5a782fb0262d88e6a5118cec8d71808562a589b91a62",
+  "roots": [
+    "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+    "/vendor/bin/qseecomd",
+    "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+    "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+    "/vendor/lib64/libspcom.so",
+    "/vendor/lib64/librpmb.so",
+    "/vendor/lib64/libssd.so",
+    "/vendor/lib64/libgpt.so",
+    "/vendor/lib64/libspl.so",
+    "/vendor/lib64/libdrmtime.so",
+    "/vendor/lib64/libGPreqcancel.so",
+    "/vendor/lib64/libqisl.so",
+    "/vendor/lib64/libops.so",
+    "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+    "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so"
+  ],
+  "assets": [
+    {
+      "source": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "destination": "vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "sha256": "e22c7976b205dabdd20e6fc9d68042f3df1e982d2b3f1098a293f66408476382",
+      "size": 15544,
+      "mode": "0755",
+      "needed": [
+        "android.hardware.gatekeeper@1.0.so",
+        "libhardware.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "destination": "vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "sha256": "104325882c4b03dde44daaf645b05272757fc3df0c69fb6e56fa0c2c27617dba",
+      "size": 41136,
+      "mode": "0755",
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libbase.so",
+        "libutils.so",
+        "libhardware.so",
+        "libbinder_ndk.so",
+        "libhidlbase.so",
+        "android.hardware.keymaster@4.0.so",
+        "libqtikeymint.so",
+        "libcrypto.so",
+        "android.hardware.security.keymint-V2-ndk.so",
+        "android.hardware.security.secureclock-V1-ndk.so",
+        "android.hardware.security.sharedsecret-V1-ndk.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "destination": "vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "sha256": "a1bc98dd7403cb56c90a6e16019d2066b03ec84d300345246e62677f89d2861c",
+      "size": 15248,
+      "mode": "0755",
+      "needed": [
+        "libbase.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "liblog.so",
+        "vendor.qti.hardware.qseecom@1.0.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/bin/qseecomd",
+      "destination": "vendor/bin/qseecomd",
+      "sha256": "c29a418102e11c2e3211eb271bf889aac357ab8babb7aaaf87998603050dac79",
+      "size": 32704,
+      "mode": "0755",
+      "needed": [
+        "libcutils.so",
+        "libutils.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libdrmfs.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "destination": "vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "sha256": "a989bf83e185e17a4a53b21cc13a521de898b29d178135a577b49e752f2113ac",
+      "size": 114984,
+      "mode": "0644",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "destination": "vendor/lib64/android.hardware.keymaster@3.0.so",
+      "sha256": "0b9ca03b6b41254014586058ced7d312714037737a858d5ddab21b49a51b62f3",
+      "size": 178088,
+      "mode": "0644",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "destination": "vendor/lib64/android.hardware.keymaster@4.0.so",
+      "sha256": "42d4e4126640ca7c1c2f4c5c3c0aceb9d65d71676b55901df1cc331cd4587e05",
+      "size": 205680,
+      "mode": "0644",
+      "needed": [
+        "android.hardware.keymaster@3.0.so",
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "destination": "vendor/lib64/android.hardware.keymaster@4.1.so",
+      "sha256": "2dc1d18e03af4dcb10514fc3503c343d717d592a4305e0e7040cc8545c3924e6",
+      "size": 146848,
+      "mode": "0644",
+      "needed": [
+        "android.hardware.keymaster@3.0.so",
+        "android.hardware.keymaster@4.0.so",
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "destination": "vendor/lib64/android.hidl.allocator@1.0.so",
+      "sha256": "f6f6c74fa345be7f8adc0be150d8685dc732e6bdcc1cd3724900ef9e66a85076",
+      "size": 80040,
+      "mode": "0644",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "destination": "vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "sha256": "9e92ad62c6bf2688a58c29e49468115c9557c612a5d5cf5569d4cd112b5a18e9",
+      "size": 58360,
+      "mode": "0644",
+      "needed": [
+        "android.hardware.gatekeeper@1.0.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "liblog.so",
+        "libcutils.so",
+        "libkeymasterdeviceutils.so",
+        "libqcbor.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "destination": "vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "sha256": "1274227bb4af4fdae2e6b45cc9bf2f983791a0d47becf1416b9d71422af1ee4e",
+      "size": 58784,
+      "mode": "0644",
+      "needed": [
+        "libbase.so",
+        "libhidlbase.so",
+        "libhidlmemory.so",
+        "libutils.so",
+        "libcutils.so",
+        "liblog.so",
+        "vendor.qti.hardware.qseecom@1.0.so",
+        "libQSEEComAPI.so",
+        "android.hidl.allocator@1.0.so",
+        "android.hidl.memory@1.0.so",
+        "libdmabufheap.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libGPreqcancel.so",
+      "destination": "vendor/lib64/libGPreqcancel.so",
+      "sha256": "23363c902b764ec31248b784fb74d20f28a0cc824d882eb155c782fda0bc3c78",
+      "size": 27792,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libGPreqcancel_svc.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libGPreqcancel_svc.so",
+      "destination": "vendor/lib64/libGPreqcancel_svc.so",
+      "sha256": "04f1cc34bd2393c91f531cdcb6811c63ce376c73bd9fbefd7e4f939469551f4e",
+      "size": 27888,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libQSEEComAPI.so",
+      "destination": "vendor/lib64/libQSEEComAPI.so",
+      "sha256": "f26301da9a863258ee667e727658f17daa7c2fd8c97836f454888f813077b126",
+      "size": 66440,
+      "mode": "0644",
+      "needed": [
+        "libdmabufheap.so",
+        "liblog.so",
+        "libutils.so",
+        "libqcbor.so",
+        "libminkdescriptor.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libdiag.so",
+      "destination": "vendor/lib64/libdiag.so",
+      "sha256": "97866043e9b82ba8d0b43134be2b82c938c4acf2f56eba5a0df1491007b1fcde",
+      "size": 310328,
+      "mode": "0644",
+      "needed": [
+        "liblog.so",
+        "libc.so",
+        "libcutils.so",
+        "libc++.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libdisplayconfig.qti.so",
+      "destination": "vendor/lib64/libdisplayconfig.qti.so",
+      "sha256": "0eaccfe71824f4d03b83a019dd15207ccc29bbf68476fef983153050659b9079",
+      "size": 144480,
+      "mode": "0644",
+      "needed": [
+        "liblog.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "vendor.display.config@2.0.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libdrm.so",
+      "destination": "vendor/lib64/libdrm.so",
+      "sha256": "2d57706fd4699c0aa4504313a3920ce7ac756aa327caab1e7962bf51018202f7",
+      "size": 94744,
+      "mode": "0644",
+      "needed": [
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libdrmfs.so",
+      "destination": "vendor/lib64/libdrmfs.so",
+      "sha256": "b0a1ea0f6da531e902d8a05630786271184dbc83344e82304b2aab8c126df12f",
+      "size": 44776,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libxml2.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libdrmtime.so",
+      "destination": "vendor/lib64/libdrmtime.so",
+      "sha256": "5ec657944fe187687dfadceefe11a9661631a94e6c5afe45217d6170d498450a",
+      "size": 19168,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libtime_genoff.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libgpt.so",
+      "destination": "vendor/lib64/libgpt.so",
+      "sha256": "de39e640e98831273985ed67e83f738d6f34c6c6e2f258502d5d17364afc7943",
+      "size": 36320,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libkeymaster_messages.so",
+      "destination": "vendor/lib64/libkeymaster_messages.so",
+      "sha256": "f8defb8f64232d6cee0307679bdd14caac47c925b17cb6d5e06e154c09980aff",
+      "size": 113744,
+      "mode": "0644",
+      "needed": [
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "destination": "vendor/lib64/libkeymasterdeviceutils.so",
+      "sha256": "d0ab0b40772907ef9bcfbf554139b328ab1e35d33ab90e1777a6749e036b7d6b",
+      "size": 36200,
+      "mode": "0644",
+      "needed": [
+        "libion.so",
+        "libcutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libcrypto.so",
+        "libdmabufheap.so",
+        "libspcom.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libkeymasterutils.so",
+      "destination": "vendor/lib64/libkeymasterutils.so",
+      "sha256": "75ef8f62d2047e0904aaf5f12bf53878a4398a6159e2a1d4f99a4cc1516bbc06",
+      "size": 247960,
+      "mode": "0644",
+      "needed": [
+        "libcutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libcrypto.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libminkdescriptor.so",
+      "destination": "vendor/lib64/libminkdescriptor.so",
+      "sha256": "5773de17bc1f130c84dde833e8d80929ba2f8e2299d707d3c27590db0edc5629",
+      "size": 54144,
+      "mode": "0644",
+      "needed": [
+        "liblog.so",
+        "libutils.so",
+        "libqcbor.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libops.so",
+      "destination": "vendor/lib64/libops.so",
+      "sha256": "af313c077cb20d1da1f0af554641f8a87fab12f0aba358de30583334b78fd1cc",
+      "size": 32296,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libdrm.so",
+        "libhidlbase.so",
+        "libdisplayconfig.qti.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libqcbor.so",
+      "destination": "vendor/lib64/libqcbor.so",
+      "sha256": "e9af2f050d2e48f3125bc73603682474b07e85093515e6b42637309cf37b5fa8",
+      "size": 23440,
+      "mode": "0644",
+      "needed": [
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libqisl.so",
+      "destination": "vendor/lib64/libqisl.so",
+      "sha256": "0eed865bc725746c5558ecba3f6be4e778f6b2f264c2d3ae085c34815e1549fa",
+      "size": 36536,
+      "mode": "0644",
+      "needed": [
+        "libcutils.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libqtikeymint.so",
+      "destination": "vendor/lib64/libqtikeymint.so",
+      "sha256": "51837c1cf0c949438c9f82aaff20439efb11fb80349630fe695aa6aa6ffa64b4",
+      "size": 271224,
+      "mode": "0644",
+      "needed": [
+        "liblog.so",
+        "libcrypto.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "libcutils.so",
+        "libkeymasterdeviceutils.so",
+        "libbase.so",
+        "libqcbor.so",
+        "libkeymaster_messages.so",
+        "android.hardware.keymaster@4.0.so",
+        "android.hardware.keymaster@4.1.so",
+        "android.hardware.security.keymint-V2-ndk.so",
+        "android.hardware.security.secureclock-V1-ndk.so",
+        "android.hardware.security.sharedsecret-V1-ndk.so",
+        "libbinder_ndk.so",
+        "libkeymasterutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/librpmb.so",
+      "destination": "vendor/lib64/librpmb.so",
+      "sha256": "8a977b90269559e7d7f50973a27de036f0e9945f974569889a498050ed7ec27f",
+      "size": 46176,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libspcom.so",
+      "destination": "vendor/lib64/libspcom.so",
+      "sha256": "d28e8bbe1f87363111dba3a0785681288e5a6fca8ef985709625aa2a1d08f8f1",
+      "size": 140968,
+      "mode": "0644",
+      "needed": [
+        "libion.so",
+        "libdmabufheap.so",
+        "libvmmem.so",
+        "libutils.so",
+        "libcutils.so",
+        "liblog.so",
+        "libcrypto.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libspl.so",
+      "destination": "vendor/lib64/libspl.so",
+      "sha256": "cc58eb9c44dc6a626862c42cf4b374cb80e26e68ce36c3920b12154d8228f36f",
+      "size": 15208,
+      "mode": "0644",
+      "needed": [
+        "libcutils.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libssd.so",
+      "destination": "vendor/lib64/libssd.so",
+      "sha256": "26ff66d1811f03020f75043cb60d83bd2a816ab6deab53520cae7f01bb4917d0",
+      "size": 15264,
+      "mode": "0644",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libtime_genoff.so",
+      "destination": "vendor/lib64/libtime_genoff.so",
+      "sha256": "5df6fb0220870236a68c999d77bd7762d05dfac0dbd7aa8527994db97a7c5666",
+      "size": 15112,
+      "mode": "0644",
+      "needed": [
+        "libc.so",
+        "libcutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/libvmmem.so",
+      "destination": "vendor/lib64/libvmmem.so",
+      "sha256": "796c71ea830a1f07aa76d22c7d06b3214ba8723b1e18213099820dda24dcc1a7",
+      "size": 40688,
+      "mode": "0644",
+      "needed": [
+        "liblog.so",
+        "libbase.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/vendor.display.config@2.0.so",
+      "destination": "vendor/lib64/vendor.display.config@2.0.so",
+      "sha256": "3c1f0bc72d62a5d6825d15839e0569a76db4e2d64dab89a44898bdc422bec810",
+      "size": 165736,
+      "mode": "0644",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "source": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "destination": "vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "sha256": "d41f2aa0791e5e537bdd07a17f332a746e89e3d077763a91e9d0edbfb9bbe1dc",
+      "size": 157920,
+      "mode": "0644",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    }
+  ],
+  "named_dlopen_candidates_not_present": [
+    "libsecureui.so"
+  ]
+}

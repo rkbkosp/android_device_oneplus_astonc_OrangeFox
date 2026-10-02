@@ -1,0 +1,4 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Recovery service subset; no additional device HAL requirements.
+     The minimal recovery device manifest does not declare a target FCM. -->
+<compatibility-matrix version="1.0" type="framework" level="legacy" />

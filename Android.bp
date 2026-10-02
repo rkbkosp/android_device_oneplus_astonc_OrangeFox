@@ -1,0 +1,46 @@
+// SPDX-License-Identifier: Apache-2.0
+soong_namespace {
+}
+
+// Android 16 split RKP out of KeyMint while the target vendor still needs
+// both V2 APIs through its legacy KeyMint SONAME. Build real generated stubs
+// from the matching frozen APIs; no copied system blob or no-op HAL shim.
+// This provider passed TWRP build-21; audit and test again in OrangeFox.
+cc_library_shared {
+    name: "libastonc_keymint_v2_compat",
+    stem: "android.hardware.security.keymint-V2-ndk",
+    // Avoid colliding with the normal framework V2 stub's installed path.
+    relative_install_path: "astonc-compat",
+    whole_static_libs: [
+        "android.hardware.security.keymint-V2-ndk",
+        "android.hardware.security.rkp-V2-ndk",
+    ],
+    shared_libs: [
+        "android.hardware.security.secureclock-V1-ndk",
+        "libbinder_ndk",
+        "liblog",
+    ],
+}
+
+// Source-built AOSP diagnostics copied into the dedicated recovery. These
+// tools do not start crypto HALs; their runtime closure is audited after build.
+prebuilt_bin {
+    name: "astonc_service.recovery",
+    src: ":service",
+    filename: "service",
+    recovery: true,
+}
+
+prebuilt_bin {
+    name: "astonc_lshal.recovery",
+    src: ":lshal",
+    filename: "lshal",
+    recovery: true,
+}
+
+prebuilt_bin {
+    name: "astonc_blkid.recovery",
+    src: ":blkid_static",
+    filename: "blkid",
+    recovery: true,
+}

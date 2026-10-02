@@ -1,0 +1,25 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Four instances/version from the target vendor KeyMint fragment. -->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <version>2</version>
+        <fqname>IKeyMintDevice/default</fqname>
+    </hal>
+    <!-- RKP is a separate aidl_interface module in the Android 16 baseline. -->
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <version>2</version>
+        <fqname>IRemotelyProvisionedComponent/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.sharedsecret</name>
+        <version>1</version>
+        <fqname>ISharedSecret/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.secureclock</name>
+        <version>1</version>
+        <fqname>ISecureClock/default</fqname>
+    </hal>
+</manifest>

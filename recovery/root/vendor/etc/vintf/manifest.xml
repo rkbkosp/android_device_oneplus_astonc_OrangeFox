@@ -1,0 +1,7 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!--
+    Deliberately empty device manifest for normal hwservicemanager/lshal.
+    Recovery's AIDL BootControl fragment remains under /system/etc/vintf.
+    Security HALs are declared by separate target-derived fragments.
+-->
+<manifest version="1.0" type="device" />

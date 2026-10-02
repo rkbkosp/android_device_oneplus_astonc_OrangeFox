@@ -1,0 +1,2352 @@
+{
+  "source": "Current Android 17 ColorOS port: active A vendor/odm collected from approved temporary RO EROFS mounts in build-17 recovery",
+  "collection_utc": "20261002T113822Z",
+  "input_manifest_sha256": "10ebdfe1753e8b4b5ffd5a782fb0262d88e6a5118cec8d71808562a589b91a62",
+  "roots": [
+    "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+    "/vendor/bin/qseecomd",
+    "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+    "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+    "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+    "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+    "/vendor/lib64/libspcom.so",
+    "/vendor/lib64/librpmb.so",
+    "/vendor/lib64/libssd.so",
+    "/vendor/lib64/libgpt.so",
+    "/vendor/lib64/libspl.so",
+    "/vendor/lib64/libdrmtime.so",
+    "/vendor/lib64/libGPreqcancel.so",
+    "/vendor/lib64/libqisl.so",
+    "/vendor/lib64/libops.so"
+  ],
+  "elf_files": [
+    {
+      "path": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "resolved_path": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "size": 41136,
+      "sha256": "104325882c4b03dde44daaf645b05272757fc3df0c69fb6e56fa0c2c27617dba",
+      "needed": [
+        "liblog.so",
+        "libcutils.so",
+        "libbase.so",
+        "libutils.so",
+        "libhardware.so",
+        "libbinder_ndk.so",
+        "libhidlbase.so",
+        "android.hardware.keymaster@4.0.so",
+        "libqtikeymint.so",
+        "libcrypto.so",
+        "android.hardware.security.keymint-V2-ndk.so",
+        "android.hardware.security.secureclock-V1-ndk.so",
+        "android.hardware.security.sharedsecret-V1-ndk.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/bin/qseecomd",
+      "resolved_path": "/vendor/bin/qseecomd",
+      "size": 32704,
+      "sha256": "c29a418102e11c2e3211eb271bf889aac357ab8babb7aaaf87998603050dac79",
+      "needed": [
+        "libcutils.so",
+        "libutils.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libdrmfs.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "resolved_path": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "size": 15248,
+      "sha256": "a1bc98dd7403cb56c90a6e16019d2066b03ec84d300345246e62677f89d2861c",
+      "needed": [
+        "libbase.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "liblog.so",
+        "vendor.qti.hardware.qseecom@1.0.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "resolved_path": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "size": 15544,
+      "sha256": "e22c7976b205dabdd20e6fc9d68042f3df1e982d2b3f1098a293f66408476382",
+      "needed": [
+        "android.hardware.gatekeeper@1.0.so",
+        "libhardware.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "resolved_path": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "size": 58360,
+      "sha256": "9e92ad62c6bf2688a58c29e49468115c9557c612a5d5cf5569d4cd112b5a18e9",
+      "needed": [
+        "android.hardware.gatekeeper@1.0.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "liblog.so",
+        "libcutils.so",
+        "libkeymasterdeviceutils.so",
+        "libqcbor.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "resolved_path": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "size": 58784,
+      "sha256": "1274227bb4af4fdae2e6b45cc9bf2f983791a0d47becf1416b9d71422af1ee4e",
+      "needed": [
+        "libbase.so",
+        "libhidlbase.so",
+        "libhidlmemory.so",
+        "libutils.so",
+        "libcutils.so",
+        "liblog.so",
+        "vendor.qti.hardware.qseecom@1.0.so",
+        "libQSEEComAPI.so",
+        "android.hidl.allocator@1.0.so",
+        "android.hidl.memory@1.0.so",
+        "libdmabufheap.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libspcom.so",
+      "resolved_path": "/vendor/lib64/libspcom.so",
+      "size": 140968,
+      "sha256": "d28e8bbe1f87363111dba3a0785681288e5a6fca8ef985709625aa2a1d08f8f1",
+      "needed": [
+        "libion.so",
+        "libdmabufheap.so",
+        "libvmmem.so",
+        "libutils.so",
+        "libcutils.so",
+        "liblog.so",
+        "libcrypto.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/librpmb.so",
+      "resolved_path": "/vendor/lib64/librpmb.so",
+      "size": 46176,
+      "sha256": "8a977b90269559e7d7f50973a27de036f0e9945f974569889a498050ed7ec27f",
+      "needed": [
+        "libutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libssd.so",
+      "resolved_path": "/vendor/lib64/libssd.so",
+      "size": 15264,
+      "sha256": "26ff66d1811f03020f75043cb60d83bd2a816ab6deab53520cae7f01bb4917d0",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libgpt.so",
+      "resolved_path": "/vendor/lib64/libgpt.so",
+      "size": 36320,
+      "sha256": "de39e640e98831273985ed67e83f738d6f34c6c6e2f258502d5d17364afc7943",
+      "needed": [
+        "libutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libspl.so",
+      "resolved_path": "/vendor/lib64/libspl.so",
+      "size": 15208,
+      "sha256": "cc58eb9c44dc6a626862c42cf4b374cb80e26e68ce36c3920b12154d8228f36f",
+      "needed": [
+        "libcutils.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libdrmtime.so",
+      "resolved_path": "/vendor/lib64/libdrmtime.so",
+      "size": 19168,
+      "sha256": "5ec657944fe187687dfadceefe11a9661631a94e6c5afe45217d6170d498450a",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libtime_genoff.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libGPreqcancel.so",
+      "resolved_path": "/vendor/lib64/libGPreqcancel.so",
+      "size": 27792,
+      "sha256": "23363c902b764ec31248b784fb74d20f28a0cc824d882eb155c782fda0bc3c78",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libGPreqcancel_svc.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libqisl.so",
+      "resolved_path": "/vendor/lib64/libqisl.so",
+      "size": 36536,
+      "sha256": "0eed865bc725746c5558ecba3f6be4e778f6b2f264c2d3ae085c34815e1549fa",
+      "needed": [
+        "libcutils.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libops.so",
+      "resolved_path": "/vendor/lib64/libops.so",
+      "size": 32296,
+      "sha256": "af313c077cb20d1da1f0af554641f8a87fab12f0aba358de30583334b78fd1cc",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libdrm.so",
+        "libhidlbase.so",
+        "libdisplayconfig.qti.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "resolved_path": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "size": 205680,
+      "sha256": "42d4e4126640ca7c1c2f4c5c3c0aceb9d65d71676b55901df1cc331cd4587e05",
+      "needed": [
+        "android.hardware.keymaster@3.0.so",
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libqtikeymint.so",
+      "resolved_path": "/vendor/lib64/libqtikeymint.so",
+      "size": 271224,
+      "sha256": "51837c1cf0c949438c9f82aaff20439efb11fb80349630fe695aa6aa6ffa64b4",
+      "needed": [
+        "liblog.so",
+        "libcrypto.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "libcutils.so",
+        "libkeymasterdeviceutils.so",
+        "libbase.so",
+        "libqcbor.so",
+        "libkeymaster_messages.so",
+        "android.hardware.keymaster@4.0.so",
+        "android.hardware.keymaster@4.1.so",
+        "android.hardware.security.keymint-V2-ndk.so",
+        "android.hardware.security.secureclock-V1-ndk.so",
+        "android.hardware.security.sharedsecret-V1-ndk.so",
+        "libbinder_ndk.so",
+        "libkeymasterutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libQSEEComAPI.so",
+      "resolved_path": "/vendor/lib64/libQSEEComAPI.so",
+      "size": 66440,
+      "sha256": "f26301da9a863258ee667e727658f17daa7c2fd8c97836f454888f813077b126",
+      "needed": [
+        "libdmabufheap.so",
+        "liblog.so",
+        "libutils.so",
+        "libqcbor.so",
+        "libminkdescriptor.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libdrmfs.so",
+      "resolved_path": "/vendor/lib64/libdrmfs.so",
+      "size": 44776,
+      "sha256": "b0a1ea0f6da531e902d8a05630786271184dbc83344e82304b2aab8c126df12f",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "libdiag.so",
+        "liblog.so",
+        "libQSEEComAPI.so",
+        "libxml2.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "resolved_path": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "size": 157920,
+      "sha256": "d41f2aa0791e5e537bdd07a17f332a746e89e3d077763a91e9d0edbfb9bbe1dc",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "resolved_path": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "size": 114984,
+      "sha256": "a989bf83e185e17a4a53b21cc13a521de898b29d178135a577b49e752f2113ac",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "resolved_path": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "size": 36200,
+      "sha256": "d0ab0b40772907ef9bcfbf554139b328ab1e35d33ab90e1777a6749e036b7d6b",
+      "needed": [
+        "libion.so",
+        "libcutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libcrypto.so",
+        "libdmabufheap.so",
+        "libspcom.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libqcbor.so",
+      "resolved_path": "/vendor/lib64/libqcbor.so",
+      "size": 23440,
+      "sha256": "e9af2f050d2e48f3125bc73603682474b07e85093515e6b42637309cf37b5fa8",
+      "needed": [
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "resolved_path": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "size": 80040,
+      "sha256": "f6f6c74fa345be7f8adc0be150d8685dc732e6bdcc1cd3724900ef9e66a85076",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libvmmem.so",
+      "resolved_path": "/vendor/lib64/libvmmem.so",
+      "size": 40688,
+      "sha256": "796c71ea830a1f07aa76d22c7d06b3214ba8723b1e18213099820dda24dcc1a7",
+      "needed": [
+        "liblog.so",
+        "libbase.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libdiag.so",
+      "resolved_path": "/vendor/lib64/libdiag.so",
+      "size": 310328,
+      "sha256": "97866043e9b82ba8d0b43134be2b82c938c4acf2f56eba5a0df1491007b1fcde",
+      "needed": [
+        "liblog.so",
+        "libc.so",
+        "libcutils.so",
+        "libc++.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libtime_genoff.so",
+      "resolved_path": "/vendor/lib64/libtime_genoff.so",
+      "size": 15112,
+      "sha256": "5df6fb0220870236a68c999d77bd7762d05dfac0dbd7aa8527994db97a7c5666",
+      "needed": [
+        "libc.so",
+        "libcutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libGPreqcancel_svc.so",
+      "resolved_path": "/vendor/lib64/libGPreqcancel_svc.so",
+      "size": 27888,
+      "sha256": "04f1cc34bd2393c91f531cdcb6811c63ce376c73bd9fbefd7e4f939469551f4e",
+      "needed": [
+        "libutils.so",
+        "libcutils.so",
+        "liblog.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libdrm.so",
+      "resolved_path": "/vendor/lib64/libdrm.so",
+      "size": 94744,
+      "sha256": "2d57706fd4699c0aa4504313a3920ce7ac756aa327caab1e7962bf51018202f7",
+      "needed": [
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libdisplayconfig.qti.so",
+      "resolved_path": "/vendor/lib64/libdisplayconfig.qti.so",
+      "size": 144480,
+      "sha256": "0eaccfe71824f4d03b83a019dd15207ccc29bbf68476fef983153050659b9079",
+      "needed": [
+        "liblog.so",
+        "libhidlbase.so",
+        "libutils.so",
+        "vendor.display.config@2.0.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "resolved_path": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "size": 178088,
+      "sha256": "0b9ca03b6b41254014586058ced7d312714037737a858d5ddab21b49a51b62f3",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libkeymaster_messages.so",
+      "resolved_path": "/vendor/lib64/libkeymaster_messages.so",
+      "size": 113744,
+      "sha256": "f8defb8f64232d6cee0307679bdd14caac47c925b17cb6d5e06e154c09980aff",
+      "needed": [
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "resolved_path": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "size": 146848,
+      "sha256": "2dc1d18e03af4dcb10514fc3503c343d717d592a4305e0e7040cc8545c3924e6",
+      "needed": [
+        "android.hardware.keymaster@3.0.so",
+        "android.hardware.keymaster@4.0.so",
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libkeymasterutils.so",
+      "resolved_path": "/vendor/lib64/libkeymasterutils.so",
+      "size": 247960,
+      "sha256": "75ef8f62d2047e0904aaf5f12bf53878a4398a6159e2a1d4f99a4cc1516bbc06",
+      "needed": [
+        "libcutils.so",
+        "libQSEEComAPI.so",
+        "liblog.so",
+        "libcrypto.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/libminkdescriptor.so",
+      "resolved_path": "/vendor/lib64/libminkdescriptor.so",
+      "size": 54144,
+      "sha256": "5773de17bc1f130c84dde833e8d80929ba2f8e2299d707d3c27590db0edc5629",
+      "needed": [
+        "liblog.so",
+        "libutils.so",
+        "libqcbor.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    },
+    {
+      "path": "/vendor/lib64/vendor.display.config@2.0.so",
+      "resolved_path": "/vendor/lib64/vendor.display.config@2.0.so",
+      "size": 165736,
+      "sha256": "3c1f0bc72d62a5d6825d15839e0569a76db4e2d64dab89a44898bdc422bec810",
+      "needed": [
+        "libhidlbase.so",
+        "liblog.so",
+        "libutils.so",
+        "libcutils.so",
+        "libc++.so",
+        "libc.so",
+        "libm.so",
+        "libdl.so"
+      ]
+    }
+  ],
+  "config_files": [
+    {
+      "path": "/vendor/etc/init/android.hardware.security.keymint-service-qti.rc",
+      "resolved_path": "/vendor/etc/init/android.hardware.security.keymint-service-qti.rc",
+      "size": 320,
+      "sha256": "b9e599d625b4fe6573c02939dbebb1b4114762e56e898254632884d9f303b48f",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc",
+      "resolved_path": "/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc",
+      "size": 229,
+      "sha256": "2ce830b82b27187b4c10e1e08628ff98bdf87785a7943ba34b2314b845a3fa06",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/init/qseecomd.rc",
+      "resolved_path": "/vendor/etc/init/qseecomd.rc",
+      "size": 317,
+      "sha256": "09a1eaa5077f1ab8833676d2fc352cd9730b763da9823caba8c882a3a1d05baa",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc",
+      "resolved_path": "/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc",
+      "size": 308,
+      "sha256": "fe3a6b4c1fbd70e60f8688be4f580f08ab3bb7949189aabea0750db5d001db79",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml",
+      "resolved_path": "/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml",
+      "size": 1971,
+      "sha256": "3a7ca3bb273ea870d5054cbc90ae117dcfc836ea123ce9f1b41cea926c63477a",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/fstab.qcom",
+      "resolved_path": "/vendor/etc/fstab.qcom",
+      "size": 11945,
+      "sha256": "4c896bf8133d5f67e37b3779bbbf4a08d0a5cf956f1fed1e429aa0947b865522",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/fstab.at.qcom",
+      "resolved_path": "/vendor/etc/fstab.at.qcom",
+      "size": 6119,
+      "sha256": "10ba8bf562b77885bc41d571d9973a4ff53b0bcbf5ca778073d73ef12ed5b5b7",
+      "needed": []
+    },
+    {
+      "path": "/vendor/etc/vintf/manifest_kalama.xml",
+      "resolved_path": "/vendor/etc/vintf/manifest_kalama.xml",
+      "size": 13681,
+      "sha256": "1dd76d79f7feb699db6c0a5b3c33d40fec79a702ae81a2feea3ed59e26482c82",
+      "needed": []
+    },
+    {
+      "path": "/vendor/build.prop",
+      "resolved_path": "/vendor/build.prop",
+      "size": 12887,
+      "sha256": "afb63d3b01b8da4a2b85ca2816e016b2ee7ddeb20e5a592b9e0d608607f733f8",
+      "needed": []
+    },
+    {
+      "path": "/odm/etc/init/vendor.qti.secure_element@1.2-service.rc",
+      "resolved_path": "/odm/etc/init/vendor.qti.secure_element@1.2-service.rc",
+      "size": 276,
+      "sha256": "f17d461347e2bcf8244e165cc4b02fe5d3f65cca56343ebf9971de7b394aeede",
+      "needed": []
+    },
+    {
+      "path": "/odm/etc/vintf/manifest/manifest_secure_element.xml",
+      "resolved_path": "/odm/etc/vintf/manifest/manifest_secure_element.xml",
+      "size": 2015,
+      "sha256": "ba320fadb5e6e8d61239ad92f16dc962b1f2f9642d6c8e6fac6ab491d46b6869",
+      "needed": []
+    },
+    {
+      "path": "/odm/etc/build.prop",
+      "resolved_path": "/odm/etc/build.prop",
+      "size": 215,
+      "sha256": "c968cfee899f20618b6ddc5804747a542bb72a30294fdfdf938aaf4ea9e4f530",
+      "needed": []
+    }
+  ],
+  "edges": [
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libhardware.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libbinder_ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "android.hardware.keymaster@4.0.so",
+      "provider": "/vendor/lib64/android.hardware.keymaster@4.0.so"
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libqtikeymint.so",
+      "provider": "/vendor/lib64/libqtikeymint.so"
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libcrypto.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "android.hardware.security.keymint-V2-ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "android.hardware.security.secureclock-V1-ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "android.hardware.security.sharedsecret-V1-ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.security.keymint-service-qti",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libdrmfs.so",
+      "provider": "/vendor/lib64/libdrmfs.so"
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/qseecomd",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "vendor.qti.hardware.qseecom@1.0.so",
+      "provider": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so"
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "android.hardware.gatekeeper@1.0.so",
+      "provider": "/vendor/lib64/android.hardware.gatekeeper@1.0.so"
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libhardware.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "android.hardware.gatekeeper@1.0.so",
+      "provider": "/vendor/lib64/android.hardware.gatekeeper@1.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libkeymasterdeviceutils.so",
+      "provider": "/vendor/lib64/libkeymasterdeviceutils.so"
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libqcbor.so",
+      "provider": "/vendor/lib64/libqcbor.so"
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libhidlmemory.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "vendor.qti.hardware.qseecom@1.0.so",
+      "provider": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "android.hidl.allocator@1.0.so",
+      "provider": "/vendor/lib64/android.hidl.allocator@1.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "android.hidl.memory@1.0.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libdmabufheap.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libion.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libdmabufheap.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libvmmem.so",
+      "provider": "/vendor/lib64/libvmmem.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libcrypto.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspcom.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/librpmb.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libdiag.so",
+      "provider": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libssd.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libgpt.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libspl.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libdiag.so",
+      "provider": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libtime_genoff.so",
+      "provider": "/vendor/lib64/libtime_genoff.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmtime.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libdiag.so",
+      "provider": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libGPreqcancel_svc.so",
+      "provider": "/vendor/lib64/libGPreqcancel_svc.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqisl.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libdrm.so",
+      "provider": "/vendor/lib64/libdrm.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libdisplayconfig.qti.so",
+      "provider": "/vendor/lib64/libdisplayconfig.qti.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libops.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "android.hardware.keymaster@3.0.so",
+      "provider": "/vendor/lib64/android.hardware.keymaster@3.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.0.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libcrypto.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libkeymasterdeviceutils.so",
+      "provider": "/vendor/lib64/libkeymasterdeviceutils.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libqcbor.so",
+      "provider": "/vendor/lib64/libqcbor.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libkeymaster_messages.so",
+      "provider": "/vendor/lib64/libkeymaster_messages.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "android.hardware.keymaster@4.0.so",
+      "provider": "/vendor/lib64/android.hardware.keymaster@4.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "android.hardware.keymaster@4.1.so",
+      "provider": "/vendor/lib64/android.hardware.keymaster@4.1.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "android.hardware.security.keymint-V2-ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "android.hardware.security.secureclock-V1-ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "android.hardware.security.sharedsecret-V1-ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libbinder_ndk.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libkeymasterutils.so",
+      "provider": "/vendor/lib64/libkeymasterutils.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqtikeymint.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libdmabufheap.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libqcbor.so",
+      "provider": "/vendor/lib64/libqcbor.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libminkdescriptor.so",
+      "provider": "/vendor/lib64/libminkdescriptor.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libQSEEComAPI.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libdiag.so",
+      "provider": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libxml2.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrmfs.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.gatekeeper@1.0.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libion.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libcrypto.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libdmabufheap.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libspcom.so",
+      "provider": "/vendor/lib64/libspcom.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterdeviceutils.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libqcbor.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hidl.allocator@1.0.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libvmmem.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libvmmem.so",
+      "needed": "libbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libvmmem.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libvmmem.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libvmmem.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libvmmem.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdiag.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdiag.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdiag.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdiag.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdiag.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdiag.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libtime_genoff.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libtime_genoff.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libtime_genoff.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libtime_genoff.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libtime_genoff.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libtime_genoff.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libGPreqcancel_svc.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrm.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrm.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrm.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdrm.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "vendor.display.config@2.0.so",
+      "provider": "/vendor/lib64/vendor.display.config@2.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libdisplayconfig.qti.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@3.0.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymaster_messages.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymaster_messages.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymaster_messages.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymaster_messages.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "android.hardware.keymaster@3.0.so",
+      "provider": "/vendor/lib64/android.hardware.keymaster@3.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "android.hardware.keymaster@4.0.so",
+      "provider": "/vendor/lib64/android.hardware.keymaster@4.0.so"
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/android.hardware.keymaster@4.1.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libQSEEComAPI.so",
+      "provider": "/vendor/lib64/libQSEEComAPI.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libcrypto.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libkeymasterutils.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "libqcbor.so",
+      "provider": "/vendor/lib64/libqcbor.so"
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/libminkdescriptor.so",
+      "needed": "libdl.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libhidlbase.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "liblog.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libcutils.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libc++.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libc.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libm.so",
+      "provider": null
+    },
+    {
+      "consumer": "/vendor/lib64/vendor.display.config@2.0.so",
+      "needed": "libdl.so",
+      "provider": null
+    }
+  ],
+  "aosp_or_apex_dependencies": [
+    "android.hardware.security.keymint-V2-ndk.so",
+    "android.hardware.security.secureclock-V1-ndk.so",
+    "android.hardware.security.sharedsecret-V1-ndk.so",
+    "android.hidl.memory@1.0.so",
+    "libbase.so",
+    "libbinder_ndk.so",
+    "libc++.so",
+    "libc.so",
+    "libcrypto.so",
+    "libcutils.so",
+    "libdl.so",
+    "libdmabufheap.so",
+    "libhardware.so",
+    "libhidlbase.so",
+    "libhidlmemory.so",
+    "libion.so",
+    "liblog.so",
+    "libm.so",
+    "libutils.so",
+    "libxml2.so"
+  ],
+  "named_dlopen_candidates_not_present": [
+    "libsecureui.so"
+  ],
+  "limitations": "DT_NEEDED plus named dlopen roots only; namespace, symbol ABI, firmware and HAL runtime not proven"
+}

@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: Apache-2.0
+# ADB/sideload/fastboot configfs actions come from TWRP etc/init.rc.
+# MTP configuration is deferred until storage bring-up.
