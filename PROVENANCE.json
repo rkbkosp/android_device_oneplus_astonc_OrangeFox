@@ -1,0 +1,211 @@
+{
+  "source_repository": "https://github.com/rkbkosp/astonc-orangefox",
+  "source_commit": "04e267d5de5af7a92187f6325e2deda71b5b8686",
+  "source_subdirectory": "device/oneplus/astonc",
+  "exported_device_commit": "68ef796d4ea45073b6200cd15f103095d7159b48",
+  "tested_configuration_commit": "815b90a3b3dbb34abd0e4050152f1dfe8ef91639",
+  "tested_image_build": 14,
+  "tested_image_sha256": "46676310849eacce7d54e7217417636564ef89ef3aa5b7b2fafb18eba71c91b8",
+  "clean_output_build": 15,
+  "clean_output_image_sha256": "cd197eae39c364aa66dc436760f3cabdaa181fcb994328b5cb197f902afdd81e",
+  "history_blob_audit_count": 68,
+  "device_files": [
+    {
+      "path": "Android.bp",
+      "sha256": "67659d653130e6742e5396cbd651491701e574fdb2e14893bf3a419a7f925624"
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "dcb735e0e5b53177dc6a1763f6354988b164676a745529a8728b3df033941029"
+    },
+    {
+      "path": "AndroidBoard.mk",
+      "sha256": "cd23cf596a4dcda6cf3c51159ed0545db6772dbaa76e0e87a3b924c06311f993"
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "528a8b1aa68ea67e9ac960a8bd6eb6fa68efd43559ba698d60608f20c68460d5"
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7c7466e57716bc07a897d0cf0c7fe726e7f94acb57dcfd79c582a81d507ffd68"
+    },
+    {
+      "path": "config/README.md",
+      "sha256": "e877156bd85ac14bf392ab02cf8f803a43e2dca29a7394d56237038cda3a05f8"
+    },
+    {
+      "path": "config/crypto-device-permissions.json",
+      "sha256": "df219976eefccf953e39cb32391f5c0ec4e4b6c8aa4c1ed36d97219f5a68fdb5"
+    },
+    {
+      "path": "config/crypto-inputs.json",
+      "sha256": "92dcb10260f973dd806da28e3fc412c87550b126993eef6cbbce8b105a3b938a"
+    },
+    {
+      "path": "config/crypto-recovery-assets.json",
+      "sha256": "5e392e2332853374b871ad96a91b148e96d26ef0f8510f866a2adc6934025ca6"
+    },
+    {
+      "path": "config/crypto-version-inputs.json",
+      "sha256": "1e64a63aaf9c54055e329d24808cc73a43e26c9e945d342d14819aed70c4318a"
+    },
+    {
+      "path": "config/gatekeeper-inputs.json",
+      "sha256": "1b6d4efb834c2dc38785b38970bf493150beab5bbbd75d57fb8bc2f1165938bc"
+    },
+    {
+      "path": "config/kernel-modules.json",
+      "sha256": "0a703544ceb73a4324dff0dc29d0fe9cddf19b7b7b816c85effbb86f3fbe21f7"
+    },
+    {
+      "path": "config/lineage.modules.load.first_stage",
+      "sha256": "3b67f7ab0d0232c22cba517f05093362ddc8d0a5dd3c403389306438796d84f6"
+    },
+    {
+      "path": "config/lineage.modules.load.recovery",
+      "sha256": "b698f661e84ef9d89a77d3c221875db4530beddae79a0a7b3ae2a41235276013"
+    },
+    {
+      "path": "config/modules.load.recovery",
+      "sha256": "5d947d5f0ddd7822e8144c2983a80fb3ef50cb191fb14a1a7d24017e02829f23"
+    },
+    {
+      "path": "config/recovery-assets.json",
+      "sha256": "11510d704e2f6b604230d1c9f2c393d2ea991483ddb11d3ebda7116749f06bc9"
+    },
+    {
+      "path": "config/recovery-ui-inputs.json",
+      "sha256": "614887c6a9d49b3f43ed6b9c29ca4890861d800355bcde96817c38a101c29d91"
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2f80ebb5c9129825a283898e1cb893aee774c45439c80d06da5fc7b6c880d68f"
+    },
+    {
+      "path": "recovery/root/etc",
+      "symlink": "/system/etc"
+    },
+    {
+      "path": "recovery/root/init.recovery.qcom.rc",
+      "sha256": "db30b37028a6e009a04c8f121b3f44b360527fa7729173964fc7886f347af64e"
+    },
+    {
+      "path": "recovery/root/init.recovery.usb.rc",
+      "sha256": "a159f57af9d67252b97d6f71835e2191a9b29d9d9aa8f217622902ece46ef699"
+    },
+    {
+      "path": "recovery/root/lib/firmware",
+      "symlink": "/vendor/firmware_mnt/image"
+    },
+    {
+      "path": "recovery/root/linkerconfig/ld.config.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery/root/sbin/linker64",
+      "symlink": "/system/bin/linker64"
+    },
+    {
+      "path": "recovery/root/system/bin/astonc-cpu-sensor",
+      "sha256": "3f1aa4f31450a299a8e08e30f289ff5d41f1d02f9c39fe3741e576dfad9ddd56"
+    },
+    {
+      "path": "recovery/root/system/etc/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery/root/system/etc/init/astonc.gatekeeper.rc",
+      "sha256": "28ee0653110cc960aaec0b08907e2e23979d1ca50d32845c071b08cc15274162"
+    },
+    {
+      "path": "recovery/root/system/etc/init/astonc.lpdumpd.rc",
+      "sha256": "7694de1fd4b03dd3e0aef7ef5edc69491d34f09bfdf6093b567420a974ac20fc"
+    },
+    {
+      "path": "recovery/root/system/etc/init/astonc.security.rc",
+      "sha256": "402a70452ab4aa056c9a979deb33f1cfb199a42ce56c38b39a9901c8465db6cf"
+    },
+    {
+      "path": "recovery/root/system/etc/ld.config.txt",
+      "sha256": "b64cd524de88d22fd0416b12343483e4e8f2fe6ce8edd53a09bde66c171da174"
+    },
+    {
+      "path": "recovery/root/system/etc/recovery.fstab",
+      "sha256": "4e7c52a2e0e45e0973516dcc1fe9f1d9da2dd0d02c0f14c1ed29906896a73e0d"
+    },
+    {
+      "path": "recovery/root/system/etc/twrp.flags",
+      "sha256": "bfc4fb878c47fe0000dba38d9714ca7514067a7e0bf31ae6d086ce23c51a170f"
+    },
+    {
+      "path": "recovery/root/system/etc/vintf/compatibility_matrix.xml",
+      "sha256": "0371b3148601b8cc593e0c40ba936e589cddad7436756e05cb8ddbdca752d608"
+    },
+    {
+      "path": "recovery/root/system/etc/vintf/manifest/astonc.keymint.xml",
+      "sha256": "c5a75e78ae20fa6a0266ea0625a26ae4ec18c73865d99f7c6c756c7ec82a780b"
+    },
+    {
+      "path": "recovery/root/system/manifest.xml",
+      "sha256": "41ef84c5249a92d3d3bb7cc3c0b43145dd5f6bc2a75ba3d2bf0ae98ddfa912c4"
+    },
+    {
+      "path": "recovery/root/vendor/etc/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery/root/vendor/etc/ueventd.rc",
+      "sha256": "99dc2a5d87474e3b9c9641178a81876671f541681bf8d0929e7c421cb6fda5d6"
+    },
+    {
+      "path": "recovery/root/vendor/etc/vintf/compatibility_matrix.xml",
+      "sha256": "499ce5dda55cbe38da3ae907b85f43eecc8ab583797e90760b52418fb5492fe2"
+    },
+    {
+      "path": "recovery/root/vendor/etc/vintf/manifest.xml",
+      "sha256": "2740b8d9b9c203c9fab78fd418828822529ef7e62d21dae6f3357183900522c4"
+    },
+    {
+      "path": "recovery/root/vendor/etc/vintf/manifest/astonc.gatekeeper.xml",
+      "sha256": "14dd17abc254313150517a2a20d0391b9f0994c4e3db9840d9839af8454d55a1"
+    },
+    {
+      "path": "recovery/root/vendor/etc/vintf/manifest/astonc.health.xml",
+      "sha256": "d79a8058bf0dd9d4cf7bf65f6ef2f47c3fd9452e641ebc746465d619aabb509c"
+    },
+    {
+      "path": "recovery/root/vendor/etc/vintf/manifest/astonc.keymint.xml",
+      "symlink": "../../../../system/etc/vintf/manifest/astonc.keymint.xml"
+    },
+    {
+      "path": "recovery/root/vendor/etc/vintf/manifest/astonc.qseecom.xml",
+      "sha256": "6f136d2093d0b27c84b0533a7cbbf7565f40866d3dfa1ff5abfa822c6ef56ffa"
+    },
+    {
+      "path": "scripts/prepare-crypto-properties.py",
+      "sha256": "aa257e6342291c948dfa0e1edc6e58b77f71f37018e45d672d1446550d9ae25e"
+    },
+    {
+      "path": "sepolicy/file_contexts",
+      "sha256": "8ff6d018edbb740c0f88044620d9cc11c4d51833be99ed75b31de6e9915b63a9"
+    },
+    {
+      "path": "sepolicy/firmware.te",
+      "sha256": "7bdc353a58f2e2d3be8e44c4c8aae97fc253e9ff405038627fc6972a3f64dcf1"
+    },
+    {
+      "path": "sepolicy/genfs_contexts",
+      "sha256": "93f9dfb3737904ec66a6a23d37e8053973548dce2ec866c25ca53e43274920bb"
+    },
+    {
+      "path": "twrp_astonc.mk",
+      "sha256": "55cf5472497363be47c411f3947eff0177ea3a37169f49ad82ba7f77eea41e03"
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "cd3243c1827db9d04f7ab26b123609c2910df87f9b4cf0c303f9e710cbd65957"
+    }
+  ],
+  "limits": "Proprietary dependencies are omitted and pinned in config manifests. Source patches and build/test tooling are maintained in the source repository. Clean build-15 has no separate device acceptance."
+}
