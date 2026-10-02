@@ -52,6 +52,7 @@ on fs
     mount vfat /dev/block/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro
 
 on boot
+    exec -- /system/bin/sh /system/bin/astonc-cpu-sensor
     start vendor.boot-default
     # OEM recovery ADSP order; its other dependencies are in vendor_boot.
     insmod /vendor/lib/modules/q6_pdr_dlkm.ko

@@ -1,0 +1,11 @@
+#!/system/bin/sh
+# SPDX-License-Identifier: Apache-2.0
+# Select the measured CPU sensor by type; thermal zone numbering can change.
+for zone in /sys/class/thermal/thermal_zone*; do
+    [ -r "$zone/type" ] || continue
+    [ "$(cat "$zone/type")" = cpuss-0 ] || continue
+    ln -sf "$zone/temp" /tmp/astonc-cpu-temp
+    exit 0
+done
+echo 'astonc: CPU sensor cpuss-0 unavailable; no synthetic temperature supplied' >&2
+exit 1

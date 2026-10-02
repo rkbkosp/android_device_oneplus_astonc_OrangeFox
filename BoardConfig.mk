@@ -88,6 +88,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TW_BRIGHTNESS_PATH := /sys/class/backlight/panel0-backlight/brightness
 TW_MAX_BRIGHTNESS := 4094
 TW_DEFAULT_BRIGHTNESS := 200
+# Approved build-6 sysfs capture: cpuss-0 reports millidegrees Celsius;
+# zone0 is the unavailable radio sensor "pa". Resolve by type at boot.
+TW_CUSTOM_CPU_TEMP_PATH := /tmp/astonc-cpu-temp
 TW_DEFAULT_LANGUAGE := zh_CN
 TW_EXTRA_LANGUAGES := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
