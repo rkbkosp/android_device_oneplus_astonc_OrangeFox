@@ -30,6 +30,7 @@ PRODUCT_BUILD_VBMETA_IMAGE := false
 
 PRODUCT_PACKAGES += android.hardware.boot-service.default_recovery
 PRODUCT_PACKAGES += astonc_service.recovery astonc_lshal.recovery astonc_blkid.recovery
+PRODUCT_PACKAGES += astonc_file_contexts.recovery
 PRODUCT_PACKAGES += astonc_keymint_v2_compat.recovery astonc_libxml2.recovery
 
 # Recovery subset of AOSP base_vendor.mk; no full Android vendor product.

@@ -2,6 +2,16 @@
 soong_namespace {
 }
 
+// Install the generated unified contexts explicitly. An incremental output
+// previously retained this legacy recovery path without an installation rule.
+prebuilt_root {
+    name: "astonc_file_contexts.recovery",
+    src: ":file_contexts.concat.tmp",
+    filename: "file_contexts",
+    recovery: true,
+    install_in_root: true,
+}
+
 // OrangeFox's Make recovery does not define the TWRP-Test recovery variant.
 // logd still needs the matching AOSP process-group profiles in its ramdisk.
 prebuilt_etc {
