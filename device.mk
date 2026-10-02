@@ -34,7 +34,11 @@ PRODUCT_PACKAGES += astonc_file_contexts.recovery
 
 # Explicit image outputs replace legacy post-install copies whose stamp lives
 # outside recovery staging. Terminal apps and named time zones need these data.
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,external/libncurses/lib/terminfo,recovery/root/system/etc/terminfo)
+# The upstream Soong module already owns the xterm* destinations. Select it,
+# and declare only the remaining database entries to avoid duplicate rules.
+PRODUCT_PACKAGES += libncurses-terminfo-x-xterm_recovery
+astonc_terminfo_files := $(call find-copy-subdir-files,*,external/libncurses/lib/terminfo,recovery/root/system/etc/terminfo)
+PRODUCT_COPY_FILES += $(filter-out external/libncurses/lib/terminfo/x/xterm%,$(astonc_terminfo_files))
 PRODUCT_COPY_FILES += system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 PRODUCT_PACKAGES += astonc_keymint_v2_compat.recovery astonc_libxml2.recovery
 
