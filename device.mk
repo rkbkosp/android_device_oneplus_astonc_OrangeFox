@@ -31,6 +31,11 @@ PRODUCT_BUILD_VBMETA_IMAGE := false
 PRODUCT_PACKAGES += android.hardware.boot-service.default_recovery
 PRODUCT_PACKAGES += astonc_service.recovery astonc_lshal.recovery astonc_blkid.recovery
 PRODUCT_PACKAGES += astonc_file_contexts.recovery
+
+# Explicit image outputs replace legacy post-install copies whose stamp lives
+# outside recovery staging. Terminal apps and named time zones need these data.
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,external/libncurses/lib/terminfo,recovery/root/system/etc/terminfo)
+PRODUCT_COPY_FILES += system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 PRODUCT_PACKAGES += astonc_keymint_v2_compat.recovery astonc_libxml2.recovery
 
 # Recovery subset of AOSP base_vendor.mk; no full Android vendor product.
