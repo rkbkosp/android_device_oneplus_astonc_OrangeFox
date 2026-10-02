@@ -15,6 +15,8 @@ export FOX_DELETE_MAGISK_ADDON=1
 export FOX_DELETE_AROMAFM=1
 export OF_ADVANCED_SECURITY=1
 export OF_SCREEN_H=2780
+# Beijing, UTC+8. POSIX TZ uses the opposite sign; saved user settings win.
+export OF_DEFAULT_TIMEZONE="CST-8"
 export FOX_USE_MISANS_FONTS=1
 export FOX_USE_NANO_EDITOR=1
 export FOX_USE_TAR_BINARY=1

@@ -93,6 +93,10 @@ TW_DEFAULT_BRIGHTNESS := 200
 TW_CUSTOM_CPU_TEMP_PATH := /tmp/astonc-cpu-temp
 TW_DEFAULT_LANGUAGE := zh_CN
 TW_EXTRA_LANGUAGES := true
+# Approved build-10 capture: pm8xxx RTC counts from 1970 and the ROM stores
+# ATS offsets under /data/vendor/time. kalama is absent from the auto-list.
+# Use upstream RTC + ATS logic; never pin an offset to a host/build date.
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 # MTP is staged separately after OrangeFox GUI/crypto baseline verification.
 # Its FunctionFS configuration and runtime path need independent verification.
