@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
     otacerts.recovery \
     recovery \
     shell_and_utilities_recovery \
-    task_profiles.json.recovery \
+    astonc_task_profiles.recovery \
     watchdogd.recovery
 PRODUCT_VENDOR_PROPERTIES += \
     ro.recovery.usb.vid=18D1 \
@@ -55,5 +55,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true \
     vendor.gatekeeper.is_security_level_spu=0
 
-# logd needs task_profiles.json.recovery even when crypto is disabled. The
-# upstream recovery required-list only selects that module with include_crypto.
+# logd needs AOSP task_profiles.json even when crypto is disabled. The explicit
+# astonc recovery variant exists independently of the upstream crypto package list.
