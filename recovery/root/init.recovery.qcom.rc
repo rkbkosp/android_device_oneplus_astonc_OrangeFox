@@ -35,6 +35,9 @@ on early-init
     mkdir /dev/blkio/background 0755 system system
 
 on init
+    # The recovery variant reads the recovery AIDL fragments and is disabled
+    # by its upstream rc; start it explicitly before the crypto services.
+    start servicemanager
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
 
