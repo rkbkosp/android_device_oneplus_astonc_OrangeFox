@@ -1,0 +1,8 @@
+New project scripts and configuration are licensed under Apache-2.0.
+Qualcomm init adaptations retain their original BSD-style notice in the file.
+Hardware facts and generated kernel configuration are recorded for auditing;
+they do not grant redistribution rights to OEM firmware or kernel binaries.
+No OEM binary or stock image is included in Git. Local imports are hash-pinned
+in device/oneplus/astonc/config/recovery-assets.json and kernel-modules.json.
+Lineage reference configuration retains the original project's applicable
+Apache-2.0 licensing; upstream commits and source paths are recorded.

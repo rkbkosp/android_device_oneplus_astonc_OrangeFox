@@ -1,0 +1,7 @@
+# OEM/vendor binaries are supplied privately and verified against config manifests.
+recovery/root/vendor/firmware/
+recovery/root/vendor/lib/modules/*.ko
+recovery/root/vendor/bin/
+recovery/root/vendor/lib64/
+__pycache__/
+*.pyc
