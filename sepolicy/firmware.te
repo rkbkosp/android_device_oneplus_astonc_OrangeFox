@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: Apache-2.0
+# Build-10 found adsp.mdt on generic vfat but kernel lookup returned EACCES.
+# A context mount gets a dedicated fs_type, not file_type; combining them is
+# forbidden by AOSP file.te. contextmount_type enforces read-only file access.
+recovery_only(`
+type astonc_firmware_file, fs_type, contextmount_type;
+allow astonc_firmware_file vfat:filesystem associate;
+r_dir_file(kernel, astonc_firmware_file)
+r_dir_file(recovery, astonc_firmware_file)
+')

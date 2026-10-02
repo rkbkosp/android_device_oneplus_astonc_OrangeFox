@@ -49,7 +49,9 @@ on property:ro.boot.usbcontroller=*
 
 on fs
     mkdir /vendor/firmware_mnt
-    mount vfat /dev/block/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro
+    # Preserve current vendor fstab ownership/masks. Its firmware_file label
+    # is absent from AOSP 16: use the defined, read-only recovery policy type.
+    mount vfat /dev/block/by-name/modem${ro.boot.slot_suffix} /vendor/firmware_mnt ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:astonc_firmware_file:s0
 
 on post-fs-data
     # Ramdisk /system/bin/sh can retain rootfs; name the existing recovery
