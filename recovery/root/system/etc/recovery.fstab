@@ -16,5 +16,5 @@ system_dlkm /system_dlkm ext4 ro wait,slotselect,logical,backup=1,wipeingui=0,ca
 /dev/block/by-name/super /super emmc defaults backup=0,flashimg=0
 /dev/block/by-name/misc /misc emmc defaults backup=0,flashimg=0
 /dev/block/by-name/metadata /metadata f2fs noatime,nosuid,nodev,discard wait,backup=0,wipeingui=0,canbewiped=0
-/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt latemount,resize,wait,check,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts:wrappedkey_v0,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs,fscompress,backup=0,wipeingui=0,canbewiped=0
+/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt latemount,resize,wait,check,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts:wrappedkey_v0,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs,fscompress,backup=1,wipeingui=0,canbewiped=0
 /devices/platform/soc/a600000.ssusb/* /usb-otg auto defaults removable,storage,backup=0,wipeingui=0
